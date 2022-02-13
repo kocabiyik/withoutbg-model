@@ -1,0 +1,15 @@
+hparam:
+  batch_size: 8
+  lr: 0.0001
+  epoch: 5
+dataset:
+  dim: 256
+  # data_dir
+  # contains subdirectories train and validation
+  # both train and validation contains directories like human, car, pet, etc.
+  data_dir: /path/to/foreground/directory
+  bg_dir: /path/to/data/background-directory # contains subdirectories like outdoor, indoor, highway etc.
+checkpoints:
+  model_checkpoint_dir: /path/to/checkpoints/directory
+  image_checkpoint_dir: /path/to/image/checkpoints/directory
+  model_path_to_initialize: /path/to/checkpoints/directory/my-best-model.pth.tar
